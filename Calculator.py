@@ -29,7 +29,11 @@ def main():
 
     # Test 4
 
+    i = [5, 6, 7]
+
+    print(i[4])
+
+    
+
 if __name__ == "__main__":
     main()
-
-    hello() #attempt 2
