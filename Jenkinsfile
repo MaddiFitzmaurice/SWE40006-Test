@@ -15,6 +15,7 @@ pipeline {
                 //sh 'python3 web_calculator.py'
                     withDockerRegistry(credentialsId: 'maddifswin-dockerhub') {
                         sh 'docker build -t maddifswin/group-task:latest .'
+                    }
                 }
             }
         }
