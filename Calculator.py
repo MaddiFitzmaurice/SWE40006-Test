@@ -29,9 +29,9 @@ def main():
 
     # Test 5
 
-    i = [5, 6, 7]
+    #i = [5, 6, 7]
 
-    print(i[4])
+    #print(i[4])
 
     
 
