@@ -1,5 +1,5 @@
 import unittest
-from calculator import add_numbers
+from Calculator import add_numbers
 
 class TestStockCalculator(unittest.TestCase):
     # Test adding two numbers
