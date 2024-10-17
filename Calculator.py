@@ -26,5 +26,7 @@ def main():
     # Display result
     print(f"The result is: {result}")
 
+    # Test
+
 if __name__ == "__main__":
     main()
