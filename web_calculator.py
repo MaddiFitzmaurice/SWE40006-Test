@@ -11,7 +11,7 @@ def welcome():
     return render_template('app.html')
 
 @app.route('/', methods=['POST'])
-def result()
+def result():
     var_1 = request.form.get("var_1", type=int, default=0)
     var_2 = request.form.get("var_2", type=int, default=0)
     
