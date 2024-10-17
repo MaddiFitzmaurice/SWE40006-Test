@@ -10,10 +10,10 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    env.CI = 'true'
-                }
+                    //env.CI = 'true'
+                
                 //sh 'python3 web_calculator.py'
-                withDockerRegistry(credentialsId: 'maddifswin-dockerhub') {
+                    withDockerRegistry(credentialsId: 'maddifswin-dockerhub') {
                         sh 'docker build -t maddifswin/group-task:latest .'
                 }
             }
