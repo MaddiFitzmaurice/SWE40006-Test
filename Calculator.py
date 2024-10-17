@@ -27,7 +27,7 @@ def main():
     # Display result
     print(f"The result is: {result}")
 
-    # Test 4
+    # Test 5
 
     i = [5, 6, 7]
 
