@@ -28,6 +28,8 @@ def main():
     print(f"The result is: {result}")
 
     # Test 5
+    
+    print(5/0)
 
     #i = [5, 6, 7]
 
