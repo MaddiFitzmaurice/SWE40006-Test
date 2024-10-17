@@ -26,7 +26,7 @@ def main():
     # Display result
     print(f"The result is: {result}")
 
-    # Test 3
+    # Test 4
 
 if __name__ == "__main__":
     main()
