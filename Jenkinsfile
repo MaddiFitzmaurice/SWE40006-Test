@@ -10,13 +10,14 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    //env.CI = 'true'
-                
-                //sh 'python3 web_calculator.py'
-                    withDockerRegistry(credentialsId: 'maddifswin-dockerhub') {
-                        sh 'docker build -t maddifswin/group-task:latest .'
-                    }
+                    env.CI = 'true'
                 }
+                
+                sh 'python3 web_calculator.py'
+                    // withDockerRegistry(credentialsId: 'maddifswin-dockerhub') {
+                    //     sh 'docker build -t maddifswin/group-task:latest .'
+                    // }
+                
             }
         }
         stage('Test') {
@@ -29,7 +30,7 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'maddifswin-dockerhub') {
-                        //sh 'docker build -t maddifswin/group-task:latest .'
+                        sh 'docker build -t maddifswin/group-task:latest .'
                         sh 'docker push maddifswin/group-task:latest'
                     }
                 }

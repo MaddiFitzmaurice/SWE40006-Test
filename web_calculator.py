@@ -1,9 +1,10 @@
 from flask import Flask, render_template, request
+import os
 
 app = Flask(__name__)
 
 def add_numbers(num1, num2):
-    return num1 - num2
+    return num1 + num2
 
 @app.route('/')
 def welcome():
@@ -18,4 +19,8 @@ def result():
     return render_template('app.html', entry=entry)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=80)
+    if os.getenv('CI', 'false') == 'true':
+        # Use default values when running in CI (like Jenkins)
+        print("Running in CI mode")
+    else:
+        app.run(host='0.0.0.0', port=80)
