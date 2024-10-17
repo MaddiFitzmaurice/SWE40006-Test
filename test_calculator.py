@@ -20,7 +20,7 @@ class TestStockCalculator(unittest.TestCase):
 
     # Test adding mixed positive and negative numbers
     def test_add_mixed_numbers(self):
-        self.assertEqual(add_numbers(-10, 20, -5, number_of_inputs=3), 3) #5
+        self.assertEqual(add_numbers(-10, 20, -5, number_of_inputs=3), 5)
 
 if __name__ == "__main__":
     unittest.main()

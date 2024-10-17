@@ -15,6 +15,8 @@ def main():
     # Collect the numbers to add
     num1 = float(input("Enter the first number: "))
     num2 = float(input("Enter the second number: "))
+    
+    i = 3 / 0 # try to cause build error
 
     num3 = 0
     if number_of_inputs == 3:
