@@ -12,7 +12,7 @@ pipeline {
                 script {
                     env.CI = 'true'
                 }
-                sh 'python3 Calculator.py'
+                sh 'python3 web_calculator.py'
             }
         }
         stage('Test') {
