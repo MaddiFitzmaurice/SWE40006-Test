@@ -3,14 +3,14 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 def add_numbers(num1, num2):
-    return num1 + num2
+    return num1 - num2
 
 @app.route('/')
 def welcome():
     return render_template('app.html')
 
 @app.route('/', methods=['POST'])
-def result()
+def result():
     var_1 = request.form.get("var_1", type=int, default=0)
     var_2 = request.form.get("var_2", type=int, default=0)
     
