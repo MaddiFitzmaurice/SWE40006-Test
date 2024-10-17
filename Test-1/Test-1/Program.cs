@@ -23,4 +23,5 @@ app.UseAuthorization();
 app.MapRazorPages();
 
 // Test
+// Test2
 app.Run();
