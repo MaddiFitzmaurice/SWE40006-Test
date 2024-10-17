@@ -9,6 +9,4 @@ RUN pip install --trusted-host pypi.python.org
 
 EXPOSE 80
 
-ENV NAME=World
-
-CMD ["python", "app.py"]
+CMD ["python", "Calculator.py"]
