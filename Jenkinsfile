@@ -29,8 +29,7 @@ pipeline {
                         sh 'docker build -t maddifswin/group-task:latest .'
                         sh 'docker push maddifswin/group-task:latest'
                     }
-                }
-               
+                }   
             }
         }
     }
